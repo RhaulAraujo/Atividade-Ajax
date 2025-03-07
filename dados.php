@@ -3,19 +3,19 @@ header('Content-Type: application/json');
 
 $usuarios = [
     [
-        'cpf' => '123.456.789-00',
-        'nome' => 'Pedro Silva',
+        'cpf' => '763.456.789-00',
+        'nome' => 'Miguel Silva',
         'telefone' => '(11) 98765-4321',
         'sexo' => 'masculino'
     ],
     [
-        'cpf' => '143.754.921-00',
-        'nome' => 'João Oliveira',
-        'telefone' => '(21) 91234-5678',
-        'sexo' => 'masculino'
+        'cpf' => '146.754.991-00',
+        'nome' => 'Hernesto paulo',
+        'telefone' => '(21) 96594-5678',
+        'sexo' => 'feminino'
     ],
     [
-        'cpf' => '886.439.193-00',
+        'cpf' => '886.987.323-00',
         'nome' => 'Alexandre cezar',
         'telefone' => '(31) 99876-5432',
         'sexo' => 'masculino'
@@ -31,7 +31,7 @@ $usuarios = [
         'cpf' => '556.159.822-35',
         'nome' => 'Riquelme Carvalho',
         'telefone' => '(11) 9643-0706',
-        'sexo' => ' Feminino'
+        'sexo' => 'masculino'
     ]
 
 
@@ -41,7 +41,7 @@ $usuarios = [
 
 foreach ($usuarios as &$usuario) {
     if (strtolower(trim($usuario['sexo'])) === 'feminino') {
-        $usuario['saudacao'] = 'Bem Vindo' .  '!';
+        $usuario['saudacao'] = 'Bem Vinda' .  '!';
     } else {
         $usuario['saudacao'] = 'Bem Vindo' .  '!';
     }
