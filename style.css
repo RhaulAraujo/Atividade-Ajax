@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #762f97, #534c4c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #977e7e;
+}
+
+.container {
+    background-color: #8b8888;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #000000, #000000);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #f6f7f8, #2005ee);
+    transform: scale(1.05);
+}
+
+.user-info {
+    margin-top: 25px;
+    text-align: left;
+    border-top: 2px solid #ddd;
+    padding-top: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.user-info p {
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user-info p strong {
+    color: #2c3e50;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #8f8a8a;
+    margin: 8px 0;
+}
+
+
+
+/* Melhorias em telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
